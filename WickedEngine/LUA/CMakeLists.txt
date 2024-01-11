@@ -66,7 +66,7 @@ add_library(LUA STATIC
 
 if (UNIX)
     # for Linux, BSD, Solaris, Minix, Apple
-    target_compile_definitions(LUA PUBLIC LUA_USE_POSIX=1)
+    target_compile_definitions(LUA PUBLIC LUA_USE_POSIX=1 LUA_USE_DLOPEN=1)
 endif()
 
 set_target_properties(LUA PROPERTIES
