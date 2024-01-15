@@ -7,11 +7,13 @@ set(LUA_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/ldo.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lfunc.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lgc.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/ljumptab.h
     ${CMAKE_CURRENT_SOURCE_DIR}/llex.h
     ${CMAKE_CURRENT_SOURCE_DIR}/llimits.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lmem.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lobject.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lopcodes.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lopnames.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lparser.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lprefix.h
     ${CMAKE_CURRENT_SOURCE_DIR}/lstate.h
@@ -30,7 +32,6 @@ add_library(LUA STATIC
     lapi.c
     lauxlib.c
     lbaselib.c
-    lbitlib.c
     lcode.c
     lcorolib.c
     lctype.c
