@@ -73,7 +73,7 @@ else ()
 		meshoptimizer
 	)
 	set(LIB_DXCOMPILER "libdxcompiler.so")
-
+	set_property(TARGET WickedEngineEditor PROPERTY LINK_FLAGS "-Wl,--export-dynamic")
 endif ()
 
 # Copy content to build folder:
